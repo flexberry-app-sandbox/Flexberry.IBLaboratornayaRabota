@@ -1,0 +1,63 @@
+﻿{
+  "name": "IISIB_Laboratornaya_RabotaТЧПрКомпРеш",
+  "modelName": "i-i-s-i-b-laboratornaya-rabota-т-ч-пр-комп-реш",
+  "className": "ТЧПрКомпРеш",
+  "nameSpace": "IIS.IB_Laboratornaya_Rabota",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "назвМер",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "описМер",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "прКомпРеш",
+      "relatedTo": "i-i-s-i-b-laboratornaya-rabota-пр-комп-реш",
+      "inverse": "тЧПрКомпРеш"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧПрКомпРешE",
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-т-ч-пр-комп-реш",
+      "attrs": [
+        {
+          "name": "назвМер",
+          "caption": "Название мероприятия",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "описМер",
+          "caption": "Описание мероприятия",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

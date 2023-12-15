@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Должность",
+      "projection": "ДолжностьL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Сотрудник",
+  "name": "IISIB_Laboratornaya_RabotaСпрСотрE",
+  "className": "СпрСотрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-спр-сотр",
+      "modelProjection": "СпрСотрE"
+    }
+  ]
+}

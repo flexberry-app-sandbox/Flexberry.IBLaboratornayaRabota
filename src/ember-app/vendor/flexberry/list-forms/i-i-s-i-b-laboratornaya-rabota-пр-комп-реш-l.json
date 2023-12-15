@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e",
+  "editForm": "i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e",
+  "external": false,
+  "caption": "Проектирование комплексного решения",
+  "name": "IISIB_Laboratornaya_RabotaПрКомпРешL",
+  "className": "ПрКомпРешL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-пр-комп-реш",
+      "modelProjection": "ПрКомпРешL"
+    }
+  ]
+}

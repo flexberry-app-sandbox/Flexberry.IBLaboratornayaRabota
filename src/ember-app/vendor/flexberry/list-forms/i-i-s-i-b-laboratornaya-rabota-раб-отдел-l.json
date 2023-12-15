@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-b-laboratornaya-rabota-раб-отдел-e",
+  "editForm": "i-i-s-i-b-laboratornaya-rabota-раб-отдел-e",
+  "external": false,
+  "caption": "Рабочий отдел",
+  "name": "IISIB_Laboratornaya_RabotaРабОтделL",
+  "className": "РабОтделL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-раб-отдел",
+      "modelProjection": "РабОтделL"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+﻿{
+  "name": "IISIB_Laboratornaya_RabotaТчОпрПотрТз",
+  "modelName": "i-i-s-i-b-laboratornaya-rabota-тч-опр-потр-тз",
+  "className": "ТчОпрПотрТз",
+  "nameSpace": "IIS.IB_Laboratornaya_Rabota",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наимТз",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "опТз",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "опрПотрТз",
+      "relatedTo": "i-i-s-i-b-laboratornaya-rabota-опр-потр-тз",
+      "inverse": "тчОпрПотрТз"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТчОпрПотрТзE",
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-тч-опр-потр-тз",
+      "attrs": [
+        {
+          "name": "наимТз",
+          "caption": "Наименование технической защиты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "опТз",
+          "caption": "Описание технической защиты",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

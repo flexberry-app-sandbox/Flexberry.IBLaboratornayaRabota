@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Рабочий отдел",
+  "name": "IISIB_Laboratornaya_RabotaРабОтделE",
+  "className": "РабОтделE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-раб-отдел",
+      "modelProjection": "РабОтделE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-b-laboratornaya-rabota-должность-e",
+  "editForm": "i-i-s-i-b-laboratornaya-rabota-должность-e",
+  "external": false,
+  "caption": "Должность",
+  "name": "IISIB_Laboratornaya_RabotaДолжностьL",
+  "className": "ДолжностьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-должность",
+      "modelProjection": "ДолжностьL"
+    }
+  ]
+}

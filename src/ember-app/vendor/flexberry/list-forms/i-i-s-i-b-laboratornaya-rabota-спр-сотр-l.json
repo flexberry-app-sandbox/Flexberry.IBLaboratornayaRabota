@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-b-laboratornaya-rabota-спр-сотр-e",
+  "editForm": "i-i-s-i-b-laboratornaya-rabota-спр-сотр-e",
+  "external": false,
+  "caption": "Сотрудник",
+  "name": "IISIB_Laboratornaya_RabotaСпрСотрL",
+  "className": "СпрСотрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-спр-сотр",
+      "modelProjection": "СпрСотрL"
+    }
+  ]
+}

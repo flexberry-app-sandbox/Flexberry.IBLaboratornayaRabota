@@ -1,0 +1,162 @@
+﻿{
+  "name": "IISIB_Laboratornaya_RabotaПрКомпРеш",
+  "modelName": "i-i-s-i-b-laboratornaya-rabota-пр-комп-реш",
+  "className": "ПрКомпРеш",
+  "nameSpace": "IIS.IB_Laboratornaya_Rabota",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "периодПрДо",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "периодПрОт",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрСотр",
+      "relatedTo": "i-i-s-i-b-laboratornaya-rabota-спр-сотр",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧПрКомпРеш",
+      "relatedTo": "i-i-s-i-b-laboratornaya-rabota-т-ч-пр-комп-реш",
+      "inverse": "прКомпРеш"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПрКомпРешE",
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-пр-комп-реш",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата создания",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "периодПрОт",
+          "caption": "Период проектирования от",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "периодПрДо",
+          "caption": "Период проектирования до",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрСотр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Ответственный",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "Ответственный",
+          "name": "спрСотр",
+          "relatedTo": "i-i-s-i-b-laboratornaya-rabota-спр-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТЧПрКомпРешE",
+          "caption": "Табличная часть проектирование комплексного решения",
+          "name": "тЧПрКомпРеш",
+          "relatedTo": "i-i-s-i-b-laboratornaya-rabota-т-ч-пр-комп-реш",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПрКомпРешL",
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-пр-комп-реш",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата создания",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "периодПрОт",
+          "caption": "Период проектирования от",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "периодПрДо",
+          "caption": "Период проектирования до",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрСотр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Ответственный",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ответственный",
+          "name": "спрСотр",
+          "relatedTo": "i-i-s-i-b-laboratornaya-rabota-спр-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

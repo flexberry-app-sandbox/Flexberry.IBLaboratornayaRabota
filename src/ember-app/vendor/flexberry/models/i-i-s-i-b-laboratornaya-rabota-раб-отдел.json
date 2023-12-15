@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISIB_Laboratornaya_RabotaРабОтдел",
+  "modelName": "i-i-s-i-b-laboratornaya-rabota-раб-отдел",
+  "className": "РабОтдел",
+  "nameSpace": "IIS.IB_Laboratornaya_Rabota",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РабОтделE",
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-раб-отдел",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Рабочий отдел",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "РабОтделL",
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-раб-отдел",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Рабочий отдел",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

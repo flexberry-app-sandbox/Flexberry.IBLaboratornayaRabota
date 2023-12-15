@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="IIS.IB_Laboratornaya_Rabota.Global" Language="C#" %>

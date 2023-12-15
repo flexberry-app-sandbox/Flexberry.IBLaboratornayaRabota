@@ -1,0 +1,100 @@
+<h3 class="ui header">{{t "forms.i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e.периодПрОт-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.периодПрОт
+      class=(if (v-get validationModel "периодПрОт" "isInvalid") "error")
+      data-test-i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e-периодПрОт=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "периодПрОт" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e.периодПрДо-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.периодПрДо
+      class=(if (v-get validationModel "периодПрДо" "isInvalid") "error")
+      data-test-i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e-периодПрДо=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "периодПрДо" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e.спрСотр-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.спрСотр
+      relationName="спрСотр"
+      projection="СпрСотрL"
+      title=(t "forms.i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e.спрСотр-caption")
+      readonly=readonly
+      componentName="спрСотрLookup"
+      class=(if (v-get validationModel "спрСотр" "isInvalid") "error")
+      data-test-i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e-спрСотр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "спрСотр" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.спрСотр.фио
+      class=(if (v-get validationModel.спрСотр "фио" "isInvalid") "error")
+      label=(t "forms.i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e.спрСотр.фио-caption")
+      data-test-i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e-спрСотр-фио=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.спрСотр "фио" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e.тЧПрКомпРеш-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="тЧПрКомпРешGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.тЧПрКомпРеш
+      content=model.тЧПрКомпРеш
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "тЧПрКомпРеш" "isInvalid") "error")
+      data-test-i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-e-тЧПрКомпРеш=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "тЧПрКомпРеш" "message")}}
+  </div>
+</form>

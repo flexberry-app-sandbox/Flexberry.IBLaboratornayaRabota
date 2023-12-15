@@ -1,0 +1,169 @@
+﻿{
+  "name": "IISIB_Laboratornaya_RabotaОпрПотрТз",
+  "modelName": "i-i-s-i-b-laboratornaya-rabota-опр-потр-тз",
+  "className": "ОпрПотрТз",
+  "nameSpace": "IIS.IB_Laboratornaya_Rabota",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "рабОтдел",
+      "relatedTo": "i-i-s-i-b-laboratornaya-rabota-раб-отдел",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрСотр",
+      "relatedTo": "i-i-s-i-b-laboratornaya-rabota-спр-сотр",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тчОпрПотрТз",
+      "relatedTo": "i-i-s-i-b-laboratornaya-rabota-тч-опр-потр-тз",
+      "inverse": "опрПотрТз"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ОпрПотрТзE",
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-опр-потр-тз",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата создания",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрСотр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио сотрудника",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "Фио сотрудника",
+          "name": "спрСотр",
+          "relatedTo": "i-i-s-i-b-laboratornaya-rabota-спр-сотр",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "РабОтдел",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Рабочий отдел",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "Рабочий отдел",
+          "name": "рабОтдел",
+          "relatedTo": "i-i-s-i-b-laboratornaya-rabota-раб-отдел",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТчОпрПотрТзE",
+          "caption": "Табличная часть определение потребностей технической защиты",
+          "name": "тчОпрПотрТз",
+          "relatedTo": "i-i-s-i-b-laboratornaya-rabota-тч-опр-потр-тз",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ОпрПотрТзL",
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-опр-потр-тз",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата сотрудник",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрСотр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио сотрудника",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фио сотрудника",
+          "name": "спрСотр",
+          "relatedTo": "i-i-s-i-b-laboratornaya-rabota-спр-сотр",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "РабОтдел",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Рабочий отдел",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Рабочий отдел",
+          "name": "рабОтдел",
+          "relatedTo": "i-i-s-i-b-laboratornaya-rabota-раб-отдел",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

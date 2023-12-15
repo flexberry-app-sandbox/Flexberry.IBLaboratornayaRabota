@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрСотр",
+      "projection": "СпрСотрL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Проектирование комплексного решения",
+  "name": "IISIB_Laboratornaya_RabotaПрКомпРешE",
+  "className": "ПрКомпРешE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-пр-комп-реш",
+      "modelProjection": "ПрКомпРешE"
+    }
+  ]
+}

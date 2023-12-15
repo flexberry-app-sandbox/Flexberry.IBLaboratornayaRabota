@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-b-laboratornaya-rabota-опр-потр-тз-e",
+  "editForm": "i-i-s-i-b-laboratornaya-rabota-опр-потр-тз-e",
+  "external": false,
+  "caption": "Определение потребностей технической защиты",
+  "name": "IISIB_Laboratornaya_RabotaОпрПотрТзL",
+  "className": "ОпрПотрТзL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-опр-потр-тз",
+      "modelProjection": "ОпрПотрТзL"
+    }
+  ]
+}

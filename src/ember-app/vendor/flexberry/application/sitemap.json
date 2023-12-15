@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "I b_ laboratornaya_ rabota",
+  "applicationTitle": "I b_ laboratornaya_ rabota",
+  "items": [
+    {
+      "link": null,
+      "menuName": "i-b-laboratornaya-rabota",
+      "caption": "IB_Laboratornaya_Rabota",
+      "title": "IB_Laboratornaya_Rabota",
+      "children": [
+        {
+          "link": "i-i-s-i-b-laboratornaya-rabota-спр-сотр-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-b-laboratornaya-rabota-пр-комп-реш-l",
+          "menuName": null,
+          "caption": "Проектирование комплексного решения",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-b-laboratornaya-rabota-опр-потр-тз-l",
+          "menuName": null,
+          "caption": "Определение потребностей технической защиты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-b-laboratornaya-rabota-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-b-laboratornaya-rabota-раб-отдел-l",
+          "menuName": null,
+          "caption": "Рабочий отдел",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

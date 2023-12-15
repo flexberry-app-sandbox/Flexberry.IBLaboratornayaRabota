@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISIB_Laboratornaya_RabotaСпрСотр",
+  "modelName": "i-i-s-i-b-laboratornaya-rabota-спр-сотр",
+  "className": "СпрСотр",
+  "nameSpace": "IIS.IB_Laboratornaya_Rabota",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фио",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "должность",
+      "relatedTo": "i-i-s-i-b-laboratornaya-rabota-должность",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СпрСотрE",
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-спр-сотр",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Фио сотрудника",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Должность",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "Должность",
+          "name": "должность",
+          "relatedTo": "i-i-s-i-b-laboratornaya-rabota-должность",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СпрСотрL",
+      "modelName": "i-i-s-i-b-laboratornaya-rabota-спр-сотр",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Фио сотрудника",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Должность",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Должность",
+          "name": "должность",
+          "relatedTo": "i-i-s-i-b-laboratornaya-rabota-должность",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

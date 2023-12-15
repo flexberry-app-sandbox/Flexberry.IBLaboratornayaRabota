@@ -1,0 +1,1 @@
+docker-compose -p ib_laboratornaya_rabota up -d
